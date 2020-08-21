@@ -1,0 +1,6 @@
+framework module Pods_SPSocketIO_Example {
+  umbrella header "Pods-SPSocketIO_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

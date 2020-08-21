@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E5CD49C587965730408930C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1E5CD49C587965730408930C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3D927B89F3AE67F9D20231E6 /* Pods-SPSocketIO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSocketIO_Tests.release.xcconfig"; path = "Target Support Files/Pods-SPSocketIO_Tests/Pods-SPSocketIO_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5D4BCD1575597239CC86C24F /* SPSocketIO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SPSocketIO.podspec; path = ../SPSocketIO.podspec; sourceTree = "<group>"; };
+		5D4BCD1575597239CC86C24F /* SPSocketIO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SPSocketIO.podspec; path = ../SPSocketIO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* SPSocketIO_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPSocketIO_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		9C74D0DD64A01AA6BCAF11A5 /* Pods-SPSocketIO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSocketIO_Example.debug.xcconfig"; path = "Target Support Files/Pods-SPSocketIO_Example/Pods-SPSocketIO_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B876D88C1C1323F2A9DCDA0D /* Pods_SPSocketIO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPSocketIO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4F3EE4F0BA04B9FDCF0201 /* Pods_SPSocketIO_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPSocketIO_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF160DF8319833C5395A5E3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DF160DF8319833C5395A5E3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE721A1E3141E294DBCC2A73 /* Pods-SPSocketIO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPSocketIO_Example.release.xcconfig"; path = "Target Support Files/Pods-SPSocketIO_Example/Pods-SPSocketIO_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				8B72189926094BB1B5A087FA /* Pods-SPSocketIO_Tests.debug.xcconfig */,
 				3D927B89F3AE67F9D20231E6 /* Pods-SPSocketIO_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SPSocketIO_Example/Pods-SPSocketIO_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SPSocketIO/SPSocketIO.framework",
+				"${PODS_ROOT}/../../SPSocketIO/Frameworks/SocketIO.framework",
+				"${PODS_ROOT}/../../SPSocketIO/Frameworks/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPSocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

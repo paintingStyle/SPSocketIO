@@ -1,0 +1,16 @@
+PODS:
+  - SPSocketIO (0.0.2)
+
+DEPENDENCIES:
+  - SPSocketIO (from `../`)
+
+EXTERNAL SOURCES:
+  SPSocketIO:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SPSocketIO: badc139012b084142119b1f9c1b102b280b92d46
+
+PODFILE CHECKSUM: 6d8ab95ff81b9b0c55a321d0faf445085e5f8090
+
+COCOAPODS: 1.7.5
