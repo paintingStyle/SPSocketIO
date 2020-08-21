@@ -4,11 +4,11 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+#	pod trunk push SPSocketIO.podspec --allow-warnings --verbose
 
 Pod::Spec.new do |s|
   s.name             = 'SPSocketIO'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'A short description of SPSocketIO.'
 
 # This description is used to generate tags and improve search results.
